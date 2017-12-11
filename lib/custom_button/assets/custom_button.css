@@ -1,0 +1,310 @@
+@-webkit-keyframes anim-moema-1 {
+  60% {
+    -webkit-transform: scale3d(0.8, 0.8, 1);
+    transform: scale3d(0.8, 0.8, 1);
+  }
+  85% {
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes anim-moema-1 {
+  60% {
+    -webkit-transform: scale3d(0.8, 0.8, 1);
+    transform: scale3d(0.8, 0.8, 1);
+  }
+  85% {
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@-webkit-keyframes anim-moema-2 {
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(1.6, 1.6, 1.6);
+    transform: scale3d(1.6, 1.6, 1.6);
+  }
+}
+@keyframes anim-moema-2 {
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(1.6, 1.6, 1.6);
+    transform: scale3d(1.6, 1.6, 1.6);
+  }
+}
+.custom-button.btn_hovered a span.main-text {
+  transition: all .3s;
+}
+.custom-button.btn_hovered a.hover_moema {
+  overflow: visible;
+}
+.custom-button.btn_hovered a.hover_moema:hover {
+  -webkit-animation: anim-moema-1 0.3s forwards;
+  animation: anim-moema-1 0.3s forwards;
+}
+.custom-button.btn_hovered a.right_ico_hover:hover span.main-text {
+  transform: translate(-10px, 0);
+}
+.custom-button.btn_hovered a.left_ico_hover:hover span.main-text {
+  transform: translate(10px, 0);
+}
+.custom-button i.icon-left {
+  margin-right: 12px;
+  position: relative;
+  z-index: 3;
+}
+.custom-button i.icon-right {
+  margin-left: 12px;
+  position: relative;
+  z-index: 3;
+}
+.custom-button i.hover-icon {
+  position: absolute;
+  line-height: 27px;
+}
+.custom-button i.hover-icon.icon-left {
+  left: 20px;
+  opacity: 0;
+  transform: translate(10px, 0);
+  transition: all .3s;
+}
+.custom-button i.hover-icon.icon-right {
+  right: 20px;
+  opacity: 0;
+  transform: translate(-10px, 0);
+  transition: all .3s;
+}
+.custom-button a {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  line-height: 27px;
+  font-size: 14px;
+  padding: 20px 40px;
+  transition: all .2s;
+  box-sizing: border-box;
+}
+.custom-button a span {
+  box-sizing: border-box;
+}
+.custom-button a:hover i.hover-icon {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.custom-button a.hover_antiman {
+  overflow: visible;
+}
+.custom-button a.hover_isi:hover {
+  transition: all .3s ease .3s;
+  background: transparent !important;
+}
+.custom-button a span.main-text {
+  transform: translate(0, 0);
+  opacity: 1;
+  display: inline-block;
+  transition: all .3s;
+}
+.custom-button a span.main-text.hover_isi {
+  position: relative;
+}
+.custom-button a span.winona-text {
+  position: absolute;
+  top: calc(50% + 35px);
+  width: 100%;
+  z-index: 2;
+  left: 0;
+  transform: translate(0, -50%);
+  opacity: 0;
+  padding: 20px 40px;
+  transition: all .3s;
+}
+.custom-button a span.winona-text.icon_vis_right {
+  text-align: left;
+}
+.custom-button a span.winona-text.icon_vis_left {
+  text-align: right;
+}
+.custom-button a span.winona-text.icon_hov_right {
+  text-align: left;
+}
+.custom-button a span.winona-text.icon_hov_left {
+  text-align: right;
+}
+.custom-button a span.saqui-text {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  z-index: 2;
+  left: 0;
+  -webkit-transform-origin: -25% 50%;
+  transform-origin: -25% 50%;
+  transform: translate(0, -50%) rotate3d(0, 0, 1, 45deg);
+  opacity: 0;
+  padding: 20px 40px;
+  transition: all .3s;
+}
+.custom-button a span.saqui-text.icon_vis_right {
+  text-align: left;
+}
+.custom-button a span.saqui-text.icon_vis_left {
+  text-align: right;
+}
+.custom-button a span.saqui-text.icon_hov_right {
+  text-align: left;
+}
+.custom-button a span.saqui-text.icon_hov_left {
+  text-align: right;
+}
+.custom-button a span.antiman-text {
+  position: absolute;
+  top: -1px;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  z-index: 2;
+  left: -1px;
+  transform: translate(0, 0) scale(1.2);
+  opacity: 0;
+  transition: all .3s;
+}
+.custom-button a span.isi-text {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  left: 0;
+  border-radius: 36px;
+  transform: translate(102%, 0);
+  transition: all .3s;
+}
+.custom-button a span.moema-text {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  bottom: -20px;
+  right: -20px;
+  background: inherit;
+  z-index: -1;
+  opacity: 0.4;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+.custom-button a span.wapasha-text {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  bottom: -20px;
+  right: -20px;
+  background: inherit;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transform: scale3d(0.6, 0.6, 1);
+  transform: scale3d(0.6, 0.6, 1);
+  transition: all .3s;
+}
+.custom-button a:hover span.winona-text {
+  top: 50%;
+  opacity: 1;
+}
+.custom-button a:hover span.saqui-text {
+  top: 50%;
+  opacity: 1;
+  transform: translate(0, -50%) rotate3d(0, 0, 1, 0deg);
+}
+.custom-button a:hover span.antiman-text {
+  opacity: 1;
+  transform: translate(0, 0) scale(1);
+}
+.custom-button a:hover span.isi-text {
+  border-radius: 0;
+  transform: translate(0, 0);
+}
+.custom-button a:hover span.moema-text {
+  -webkit-animation: anim-moema-2 0.3s 0.3s forwards;
+  animation: anim-moema-2 0.3s 0.3s forwards;
+}
+.custom-button a:hover span.wapasha-text {
+  transform: scale3d(1, 1, 1);
+  -webkit-transform: scale3d(1, 1, 1);
+  opacity: 1;
+}
+.custom-button a:hover span.main-text.hover_winona {
+  opacity: 0;
+  transform: translate(0, -35px);
+}
+.custom-button a:hover span.main-text.hover_saqui {
+  opacity: 0;
+}
+.custom-button a:hover span.main-text.hover_isi {
+  z-index: 3;
+}
+.custom-button a:hover .fa {
+  z-index: 3;
+}
+@media (max-width: 767px) {
+  .custom-button {
+    text-align: center !important;
+  }
+}
+/* Integration in header and native code changes */
+body.sellocity-custom-button--active {
+  /* All buttons anywhere on site */
+  /* All buttons only in header */
+}
+body.sellocity-custom-button--active .sellocity-custom-button .sellocity-custom-btn-medium {
+  padding: 6px 26px;
+}
+body.sellocity-custom-button--active .sellocity-custom-button .sellocity-custom-btn-small {
+  padding: 2px 22px;
+}
+body.sellocity-custom-button--active .sellocity-custom-button .sellocity-custom-btn-large {
+  padding: 10px 30px;
+}
+body.sellocity-custom-button--active .sellocity-custom-button a {
+  font-size: 16px;
+}
+body.sellocity-custom-button--active .sellocity-custom-button span {
+  /* Fix for blury text on hover */
+  line-height: 26px;
+}
+body.sellocity-custom-button--active .sellocity-custom-button span.antiman-text {
+  pointer-events: none;
+}
+body.sellocity-custom-button--active .header_wrapper #div_header_menu {
+  line-height: 1;
+}
+body.sellocity-custom-button--active .header_wrapper #div_header_menu #menu-custom-button {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+body.sellocity-custom-button--active .header_wrapper.sticky-header #div_header_menu.menu_wrapper {
+  height: auto;
+}
+body.sellocity-custom-button--active .header_wrapper.sticky-header #div_header_menu #menu-custom-button .sellocity-custom-btn-large,
+body.sellocity-custom-button--active .header_wrapper.sticky-header #div_header_menu #menu-custom-button .sellocity-custom-btn-small,
+body.sellocity-custom-button--active .header_wrapper.sticky-header #div_header_menu #menu-custom-button .sellocity-custom-btn-medium {
+  padding: 2px 22px;
+  font-size: 16px !important;
+}
+body.sellocity-custom-button--active .header_wrapper.sticky-header #div_header_menu #menu-custom-button .sellocity-custom-btn-large i,
+body.sellocity-custom-button--active .header_wrapper.sticky-header #div_header_menu #menu-custom-button .sellocity-custom-btn-small i,
+body.sellocity-custom-button--active .header_wrapper.sticky-header #div_header_menu #menu-custom-button .sellocity-custom-btn-medium i {
+  line-height: 19px !important;
+}
+body.sellocity-custom-button--active .header_wrapper.sticky-header #div_header_menu #search-trigger {
+  vertical-align: middle;
+}
+/* Fix for responsive menu */
+body.sellocity-custom-button--active .pbtheme-responsive-menu .sellocity-custom-button {
+  text-align: left !important;
+  margin-bottom: 5px;
+}
+/*# sourceMappingURL=custom_button.css.map */

@@ -1,0 +1,21 @@
+/* Checkboxes on product */
+#product_metabox h2.ui-sortable-handle,
+#product_metabox h2.hndle,
+#product_metabox h2.ui-sortable-handle span,
+#product_metabox h2.hndle span {
+    color: #ffffff;
+}
+
+#product_metabox input[type="radio"]{
+    display: block;
+    margin: 0 auto !important;
+    margin-bottom: 10px !important;
+}
+
+#product_metabox input[type="radio"] + label{
+    opacity: 0.3;
+}
+
+#product_metabox input[type="radio"]:checked + label{
+    opacity: 1;
+}

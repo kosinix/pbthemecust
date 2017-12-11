@@ -1,0 +1,111 @@
+/* Mixins */
+
+.widget-title-font-properties {
+    font-size: @widget_title_font_size;
+    font-weight: @widget_title_font_weight;
+    line-height: @widget_title_line_height;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.widget-utility-font-properties {
+    font-size: @widget_utility_font_size;
+    font-weight: @widget_utility_font_weight;
+    line-height: @widget_utility_line_height;
+    letter-spacing: @widget_utility_letter_spacing;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.widget-text-font-properties {
+    font-size: @widget_text_font_size;
+    font-weight: @widget_text_font_weight;
+    line-height: @widget_utility_line_height;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.widget-form-fields-common-styles {
+    p {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+        
+    input, 
+    select,
+    textarea,
+    label {
+        border-radius: 5px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 15px;
+        font-size: 13px;
+        font-weight: normal;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        line-height: 18px;
+        vertical-align: middle;
+        outline: none !important;
+    }
+
+    input {
+        height: 50px;
+
+        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            color: inherit;
+        }
+
+        &::-moz-placeholder { /* Firefox 19+ */
+            color: inherit;
+        }
+
+        &:-ms-input-placeholder { /* IE 10+ */
+            color: inherit;
+        }
+
+        &:-moz-placeholder { /* Firefox 18- */
+            color: inherit;
+        }
+    }
+
+    button,
+    input[type="file"],
+    input[type="submit"] {
+        width: auto;
+        min-height: 50px;
+        text-align: center;
+        padding: 15px;
+        min-width: 100px;
+        width: auto;
+        background: @theme_color_dark;
+        border-radius: 5px;
+        border: 1px solid @theme_color_dark;
+        color: #fff;
+        text-transform: uppercase;
+
+        &:focus,
+        &:active {
+            outline: none;
+        }
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+        width: 15px;
+        height: 15px;
+        margin: 0;
+    }
+
+    label {
+        padding-left: 0;
+        padding-right: 5px;
+    }
+
+    select {
+        background: transparent;
+    }
+
+    textarea {
+        padding: 15px;
+    }
+}

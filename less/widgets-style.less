@@ -1,0 +1,173 @@
+/* Widgets title styles - from theme options */
+
+/* For mixings: If condition true, it will appy mixin or it will be undefined. Can not be empty string*/
+
+/* Widget title line color */
+.widget_title_line_color_mixin(@line_color) when (iscolor(@line_color)) {
+    border-color: @line_color !important;
+}
+
+.widget_title_line_color_mixin(@line_color) when not (iscolor(@line_color)) {
+    /* Use theme default */
+}
+
+/* Widget title backgorund color */
+.widget_title_bgd_color_mixin(@bgd_color) when (iscolor(@bgd_color)) {
+    background-color: @bgd_color !important;
+    padding: 10px 15px;
+}
+
+.widget_title_bgd_color_mixin(@bgd_color) when not (iscolor(@bgd_color)) {
+    /* Use theme default */
+}
+
+/* Hide line when background color is selected */
+.widget_title_bgd_color_line_mixin(@bgd_color) when (iscolor(@bgd_color)) {
+    display: none !important;
+}
+
+.widget_title_bgd_color_line_mixin(@bgd_color) when not (iscolor(@bgd_color)) {
+    /* Use theme default */
+}
+        
+.widget {
+    
+    h3.pbtheme-widget-title {
+        text-align: left !important;
+        
+        span.title_container {
+            position: relative;
+            .widget_title_bgd_color_mixin(@widget_title_bgd_color);
+        }
+        
+        span.title_holder {
+            display: inline-block;
+            text-align: left;
+            vertical-align: middle;
+            color: @widget_title_color;
+        }
+        
+        span.blog_header_line {
+            vertical-align: middle;
+            display: inline-block;
+            border-width: @widget_title_border_width;
+            .widget_title_line_color_mixin(@widget_title_line_color);
+            .widget_title_bgd_color_line_mixin(@widget_title_bgd_color);
+            margin-top: 0;
+            float: none !important;
+            
+        }
+        
+        &.widget__title--no-line {
+            
+            span.blog_header_line {
+                display: none;
+            }
+        }
+        
+        /*
+        &.widget__title--long-line {
+            // Theme default style
+        }
+        */
+        
+        &.widget__title--short-line {
+            
+            span.blog_header_line {
+                width: @widget_title_short_line;
+            }
+        }
+        
+        &.widget__title--short-left-line {
+            
+            span.title_holder {
+                margin-left: ~"calc(@{widget_title_short_line} + 12px)";
+            }
+            
+            span.blog_header_line {
+                width: @widget_title_short_line;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                margin: 0;
+                transform: translate(0, -50%);
+                -webkit-transform: translate(0, -50%);
+                -moz-transform: translate(0, -50%);
+            }
+        }
+        
+        &.widget__title--short-bottom-line {
+            
+            span.title_holder {
+                display: block;
+                position: relative;
+            }
+            
+            span.blog_header_line {
+                width: @widget_title_short_line;
+                margin-left: 0;
+                display: block;
+                position: relative;
+                clear: both;
+                margin-bottom: 8px;
+                top: 8px;
+            }
+        }
+        
+        &.widget__title--long-bottom-line {
+            
+            span.title_holder {
+                display: block;
+            }
+            
+            span.blog_header_line {
+                width: @widget_title_short_line;
+                margin-left: 0;
+                display: block;
+                clear: both;
+                width: 100%;
+                position: relative;
+                margin-bottom: 8px;
+                top: 8px;
+            }
+        }
+        
+        &.widget__title--vertical-left-line {
+            
+            span.title_holder {
+                margin-left: ~"calc(@{widget_title_border_width} + 11px)";
+                overflow: hidden;
+            }
+            
+            span.blog_header_line {
+                margin-left: 0;
+                position: absolute;
+                top: 0;
+                left: @widget_title_border_width;
+                border-width: @widget_title_border_width;
+                width: 100%;
+                max-width: 100%;
+                transform: rotate(90deg);
+                -webkit-transform: rotate(90deg);
+                -moz-transform: rotate(90deg);
+                transform-origin: 0 0;
+                -moz-transform-origin: 0 0;
+                -webkit-transform-origin: 0 0;
+            }
+        }
+    }
+}
+
+.header_wrapper,
+.footer_wrapper {
+    
+    .widget {
+    
+        h3.pbtheme-widget-title {
+
+            .blog_header_line  {
+                .widget_title_line_color_mixin(@widget_title_line_color);
+            }
+        }
+    }
+}
