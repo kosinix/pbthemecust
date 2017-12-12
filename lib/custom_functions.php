@@ -108,7 +108,7 @@ function pbt_theme_sp_add_to_cart_padding() {
     
     echo '</style>';
 }
-add_action('wp_head', 'pbt_theme_sp_add_to_cart_padding', 1005);
+// add_action('wp_head', 'pbt_theme_sp_add_to_cart_padding', 1005);
 
 /**
  * PBTheme Header Elements
