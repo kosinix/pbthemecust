@@ -2148,3 +2148,34 @@ input[type="number"] {
     }
 
 }
+
+
+/* Mods for webdesign */
+.single-product .product {
+    padding-top: 60px;
+}
+
+.woocommerce div.product div.images img, .woocommerce-page div.product div.images img, .woocommerce #content div.product div.images img, .woocommerce-page #content div.product div.images img{
+    border:0;
+}
+
+.woocommerce div.product div.images .flex-control-thumbs li {
+    margin: 0 10px 0 0;
+}
+.woocommerce div.product div.images .flex-control-thumbs li img {
+    border: 2px solid #666 !important;
+}
+
+.single-prod-title {
+    color: #444;
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.woocommerce div.product form.cart .button, .woocommerce-page div.product form.cart .button, .woocommerce #content div.product form.cart .button, .woocommerce-page #content div.product form.cart .button {
+    width: auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
