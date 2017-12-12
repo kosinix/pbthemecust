@@ -10,10 +10,8 @@
 global $product, $pbtheme_data, $post;
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
-
-echo do_shortcode(sprintf('[pbtheme_title type="h3" align="left" add_element="itemprop=\'name\'"]%1$s[/pbtheme_title]', get_the_title()));
-
 ?>
+<h1 class="single-prod-title"><?php echo get_the_title(); ?></h1>
 
 
 
