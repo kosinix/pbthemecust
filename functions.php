@@ -665,6 +665,8 @@ if (!function_exists('pbtheme_scripts')) :
 
         wp_enqueue_script('pbtheme-main-js', get_template_directory_uri() . '/js/main.js', array('jquery'), '1.0', true);
 
+        wp_deregister_script( 'zoom' );
+        
         // Localize main.js script
         wp_localize_script( 'pbtheme-main-js', 'pbtheme_mainjs_data', array(
             'enable_sticky_header' => isset( $pbtheme_data[ 'disable_sticky_header' ] ) ? $pbtheme_data[ 'disable_sticky_header' ] : 0,

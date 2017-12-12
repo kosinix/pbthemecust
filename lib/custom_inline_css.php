@@ -241,4 +241,4 @@ if (!function_exists('shindiri_styles')) :
         echo '</style>';
     }
 endif;
-add_action('wp_head', 'shindiri_styles', 99);
+// add_action('wp_head', 'shindiri_styles', 99);
