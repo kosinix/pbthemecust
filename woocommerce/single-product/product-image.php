@@ -35,7 +35,7 @@ $wrapper_classes   = apply_filters( 'woocommerce_single_product_image_gallery_cl
 ) );
 
 ?>
-<div class="<?php echo esc_attr( implode( ' ', array_map( 'sanitize_html_class', $wrapper_classes ) ) ); ?> images pbuilder_column pbuilder_column-1-2">
+<div class="<?php echo esc_attr( implode( ' ', array_map( 'sanitize_html_class', $wrapper_classes ) ) ); ?> images pbuilder_column pbuilder_column-1-3">
 	<figure class="woocommerce-product-gallery__wrapper">
 		<?php
 		$attributes = array(
