@@ -1103,19 +1103,7 @@ p.demo_store {
 
 }
 
-.woocommerce .quantity, .woocommerce-page .quantity, .woocommerce #content .quantity, .woocommerce-page #content .quantity {
 
-    width:85px;
-
-	height:38px;
-
-    position: relative;
-
-    overflow: hidden;
-
-    zoom: 1;
-
-}
 
 .woocommerce .quantity input::-webkit-outer-spin-button, .woocommerce-page .quantity input::-webkit-outer-spin-button, .woocommerce #content .quantity input::-webkit-outer-spin-button, .woocommerce-page #content .quantity input::-webkit-outer-spin-button, .woocommerce .quantity input::-webkit-inner-spin-button, .woocommerce-page .quantity input::-webkit-inner-spin-button, .woocommerce #content .quantity input::-webkit-inner-spin-button, .woocommerce-page #content .quantity input::-webkit-inner-spin-button {
 
