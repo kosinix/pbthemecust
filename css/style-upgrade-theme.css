@@ -1231,13 +1231,14 @@
     padding: 20px 20px 20px 50px;
     border-top: solid 1px #ddd;
 }
-
-.woocommerce div.product form.cart .button, .woocommerce-page div.product form.cart .button, .woocommerce #content div.product form.cart .button, .woocommerce-page #content div.product form.cart .button{
-    width: auto;
+.woocommerce-tabs .panel h2 {
+    margin-bottom: 12px
+}
+.woocommerce .single_add_to_cart_button {
     padding: 10px 20px;
     font-size: 16px;
     text-transform: capitalize;
-    background: none;
+    border: 0;
 }
 
 
