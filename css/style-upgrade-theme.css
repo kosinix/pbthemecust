@@ -1141,7 +1141,8 @@
 }
 
 /* Buttons */
-.woocommerce .button {
+.woocommerce .button,
+.woocommerce .pbtheme_container .button  {
     background: none;
     padding: 7px 16px;
     border-radius: 20px;
@@ -1237,4 +1238,83 @@
     font-size: 16px;
     text-transform: capitalize;
     background: none;
+}
+
+
+/* Cart */
+.woocommerce-cart-form {
+    box-sizing: border-box;
+}
+.woocommerce-cart-form * {
+    box-sizing: inherit;
+}
+.woocommerce-cart-form {
+    padding-top: 50px
+}
+.woocommerce-cart h1 {
+    margin-bottom: 25px;
+}
+.woocommerce-cart thead th{
+    background:#F8F8F8;
+    padding: 10px
+}
+.woocommerce-cart .product-remove {
+    width: 5%;
+    position: relative;
+}
+.woocommerce-cart .product-thumbnail {
+    width: 30%;
+}
+.woocommerce-cart .product-name {
+    width: 16%;
+}
+.woocommerce-cart .product-price {
+    width: 16%;
+}
+.woocommerce-cart .product-quantity {
+    width: 16%;
+}
+.woocommerce-cart .product-subtotal {
+    width: 16%;
+}
+.woocommerce-cart .product-remove a {
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    font-size: 24px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    margin-top: -12px;
+    background: #E2401C;
+    display: block;
+    padding: 0px 5px;
+    line-height: 1;
+    color: #ffffff;
+    border-radius: 20px
+}
+.woocommerce-cart .coupon {
+    float:left;
+    width:  50%;
+}
+.woocommerce-cart .coupon .input-text{
+    padding: 10px;
+}
+
+.woocommerce-cart .button[name="update_cart"] {
+    float: right;
+}
+.woocommerce-cart .actions {
+    padding: 20px
+}
+/* Cart totals */
+.cart_totals h2 {
+    margin-bottom: 10px
+}
+.cart-collaterals {
+    margin-left: 50%;
+}
+.wc-proceed-to-checkout {
+    text-align: right;
+    margin-bottom: 150px; 
 }
