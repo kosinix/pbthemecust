@@ -1169,7 +1169,10 @@
     float: left;
     width: 25%;
     text-align: center;
+    padding-right: 20px;
+    padding-bottom: 20px;
 }
+
 .products li h2 {
     font-size: 18px;
     font-weight: normal;
