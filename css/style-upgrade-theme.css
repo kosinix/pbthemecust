@@ -1168,7 +1168,6 @@
 .products li {
     float: left;
     width: 25%;
-    margin: 0 5px 5px 0;
     text-align: center;
 }
 .products li h2 {
