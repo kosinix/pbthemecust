@@ -1144,6 +1144,7 @@
 /* Buttons */
 .woocommerce .button,
 .woocommerce .pbtheme_container .button  {
+    display: inline-block;
     background: none;
     padding: 7px 16px;
     border-radius: 20px;
@@ -1198,12 +1199,24 @@
 .single-product .woocommerce-product-gallery {
     width: 40%;
     float: left;
-    margin-right: 20px;
     margin-bottom: 50px;
 }
 .single-product .summary {
-    width: 40%;
+    width: 60%;
+    padding-left: 50px;
     float: left;
+}
+.single-product .product_title {
+    margin-bottom: 30px;
+}
+.single-product .cart {
+    margin-bottom: 50px;
+}
+.single-product .cart .quantity{
+    margin-bottom: 30px;
+}
+.single-product .product_meta {
+    margin-bottom: 10px;
 }
 .single-product .flex-viewport {
     margin-bottom: 15px;
@@ -1253,7 +1266,7 @@
 
 
 /* Cart */
-.woocommerce {
+.woocommerce-cart .woocommerce {
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -1344,7 +1357,8 @@
     background: #006900;
     padding: 15px 20px 15px 20px;
     color:#fff;
-    border-left: 10px solid #005600
+    border-left: 10px solid #005600;
+    margin-bottom: 15px;
 }
 .woocommerce-message .button,
 .woocommerce-Message .button {
