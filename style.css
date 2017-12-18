@@ -2823,9 +2823,7 @@ address {
 }
 
 .blog_header_title.text-left .blog_header_line {
-
-    margin-left: 12px;
-
+margin-left: 12px;
 }
 
 .blog_header_title.text-right .blog_header_line {
@@ -2863,9 +2861,7 @@ h2.blog_header_title .blog_header_line {
 }
 
 h3.blog_header_title .blog_header_line, h4.blog_header_title .blog_header_line, h5.blog_header_title .blog_header_line {
-
-    margin-top:12px;
-
+margin-top:12px;
 }
 
 .blog_header_title.text-center .blog_header_line {
