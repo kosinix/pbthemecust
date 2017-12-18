@@ -87,7 +87,7 @@
 				$write_comments =  __('Comments are off for this post.', 'pbtheme');
 			}
 
-			$heading .= '<div class="posts_meta"><div class="div_date_meta inline-block post-date date updated">'.$timecode.'</div><div class="div_author_meta inline-block a-inherit author">'.__('by', 'anivia').' '.get_the_author_link().'</div><div class="div_category_meta inline-block a-inherit">'.__('in', 'pbtheme').' '.get_the_category_list( ', ' ).'</div><div class="div_comment_meta inline-block a-inherit">'.$write_comments.'</div></div>';
+			//$heading .= '<div class="posts_meta"><div class="div_date_meta inline-block post-date date updated">'.$timecode.'</div><div class="div_author_meta inline-block a-inherit author">'.__('by', 'anivia').' '.get_the_author_link().'</div><div class="div_category_meta inline-block a-inherit">'.__('in', 'pbtheme').' '.get_the_category_list( ', ' ).'</div><div class="div_comment_meta inline-block a-inherit">'.$write_comments.'</div></div>';
 		}
 		else {
 			$timecode = get_the_date();
