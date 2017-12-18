@@ -55,7 +55,7 @@ $pbtheme_page_width = get_post_meta(get_the_ID(), 'pbtheme_page_width', true );
 			<?php if ( get_query_var('paged') ) { $paged = get_query_var('paged'); } elseif ( get_query_var('page') ) { $paged = get_query_var('page'); } else { $paged = 1; } ?>
 			<div id="content" class="<?php echo $blog_class; ?>">
 			<?php
-				echo do_shortcode('[pbtheme_title align="left"]' . get_bloginfo('name') . '[/pbtheme_title]');
+				//echo do_shortcode('[pbtheme_title align="left"]' . get_bloginfo('name') . '[/pbtheme_title]');
 			?>
 			<?php
 				if ( $pbtheme_data['blog_layout'] == '1' ) :
