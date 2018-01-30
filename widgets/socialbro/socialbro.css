@@ -1,5 +1,5 @@
 ul.social-Bro {list-style: none; margin: 0 !important; padding: 0 !important;}
-ul.social-Bro li {display: block; position: relative; padding: 0; float: left;}
+ul.social-Bro li {display: inline-block;position: relative;padding: 0;float: left;}
 ul.social-Bro li a {display: block; width: 36px; height: 36px;}
 ul.social-Bro li a img {display: block; width: 100%; transition: opacity 200ms;}
 
