@@ -1481,7 +1481,7 @@ h3.blog_header_title {
 
 }
 
-.widget_recent_entries li:first-child, .widget_recent_comments li:first-child, .widget_archive li:first-child, .widget_categories li:first-child, .widget_meta li:first-child, .widget_pages li:first-child, .widget_nav_menu li:first-child, .widget.woocommerce li:first-child {border-top:0;padding-top:0;}
+.widget_recent_entries li:first-child, .widget_recent_comments li:first-child, .widget_archive li:first-child, .widget_categories li:first-child, .widget_meta li:first-child, .widget_pages li:first-child, .widget_nav_menu li:first-child, .widget.woocommerce li:first-child {border-top:0;/* padding-top:0; */}
 
 
 
