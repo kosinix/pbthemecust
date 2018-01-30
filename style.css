@@ -1123,13 +1123,13 @@ h1.div-breadcrumb-current {font-size:24px;line-height:36px;font-style:normal;}
 
 /*.pbtheme_container input[type="text"].input_field { float:left; width:70%; border:solid 1px transparent; border-radius:0; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; height: 40px; color: #999999;}*/
 
-.pbtheme_container input[type="text"].input_field { float:left; width:70%; border:solid 1px transparent; border-radius:0; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;font-size: 15px;border-radius: 3px;height: 30px;color: #999999;}
+.pbtheme_container input[type="text"].input_field {float:left;width:70%;border: solid 1px #f9700c;border-radius:0;-ms-box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-size: 15px;border-radius: 3px;height: 30px;color: #999;}
 
 
 
 textarea.textarea_field { border:solid 1px transparent; border-radius:0; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 
-input[type="text"].input_field:focus, textarea.textarea_field:focus { -moz-box-shadow:none; -webkit-box-shadow:none; box-shadow:none; border:1px solid transparent;}
+input[type="text"].input_field:focus, textarea.textarea_field:focus {-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;}
 
 .pbtheme_container input[type="submit"], .pbtheme_container input[type="reset"].submit_button {display: block; border-radius:0; height:40px; float: left; font-size:16px; line-height:16px; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding:3px 5px 3px 5px; text-align: center; border:none; color:#ffffff;}
 
@@ -1481,7 +1481,7 @@ h3.blog_header_title {
 
 }
 
-.widget_recent_entries li:first-child, .widget_recent_comments li:first-child, .widget_archive li:first-child, .widget_categories li:first-child, .widget_meta li:first-child, .widget_pages li:first-child, .widget_nav_menu li:first-child, .widget.woocommerce li:first-child {border-top:0;padding-top:0;}
+.widget_recent_entries li:first-child, .widget_recent_comments li:first-child, .widget_archive li:first-child, .widget_categories li:first-child, .widget_meta li:first-child, .widget_pages li:first-child, .widget_nav_menu li:first-child, .widget.woocommerce li:first-child {border-top:0;/* padding-top:0; */}
 
 
 
@@ -6392,3 +6392,7 @@ body.div_responsive .logo img {
 
 
 
+.headline_highlighted_column_block,
+.sidebar_wrapper {
+    padding-top: 50px;
+}
